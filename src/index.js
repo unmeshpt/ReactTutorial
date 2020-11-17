@@ -8,8 +8,10 @@ import Counternew from './Counternew'
 import Demo from './Demo'
 import Demonew from './Demonew'
 import Listview from './Listview'
+import Axiosdemotest from './Axiosdemo'
+import Databasedemo from'./Databasedemo'
 
-    ReactDOM.render(<Listview />, document.getElementById('root'));
+    ReactDOM.render(<Databasedemo />, document.getElementById('root'));
 
 
 

@@ -10,7 +10,7 @@ class Listview extends React.Component {
                 { name: "Ajith", age: "35" },
                 { name: "juhi", age: "36" },
                 { name: "mahi", age: "39" }
-            ]
+            ],
         }
     }
 
@@ -21,18 +21,23 @@ class Listview extends React.Component {
                 <ul>
                     {this.state.items.map((itm, k) => <li key={k}>{itm}</li>)}
                 </ul>
-                <table>
-                    <tr>
-                        <td>Name</td>
-                        <td>Age</td>
-                    </tr>
-                    {
-                        this.state.users.map((nm, k) =>
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Age</td>
+                        </tr>
+
+                    </thead>
+                    {this.state.users.map((nm, k) =>
+                        <tbody>
                             <tr key={k}>
                                 <td>{nm.name}</td>
                                 <td>{nm.age}</td>
                             </tr>
-                        )}
+                        </tbody>
+
+                    )}
                 </table>
             </div>
         )
