@@ -11,7 +11,8 @@ import Listview from './Listview'
 import Axiosdemotest from './Axiosdemo'
 import Databasedemo from'./Databasedemo'
 
-    ReactDOM.render(<Databasedemo />, document.getElementById('root'));
+
+    ReactDOM.render(<App />, document.getElementById('root'));
 
 
 

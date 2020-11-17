@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 
-export default function Home(){
+export default function About(){
 
     return(
         <div>
-            <p>Header Section</p>
+            <p>About Page</p>
         </div>
     )
 }
+    

@@ -1,19 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
-import { Header, Footer } from './Home';
-import Contact from './Contact'
-import Welcome from './Welcome'
-function App() {
-  return (
+import React from 'react'
 
-    <div>
-      <Welcome title="Hai How Are man"/>
-      <Contact name="teacher" />
-      <Contact name="Stutent" />
-      <Welcome title="This is Unmesh"/>
+import Home from './Home'
+import About from './About'
+import Contact from './Demonew'
 
-    </div>
-  );
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom'
+
+
+class App extends React.Component {
+  constructor() {
+    super();
+
+  }
+
+  render() {
+
+    return (
+      <Router>
+        <div>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+      </Router>
+    )
+
+  }
+
+
+
 }
+
 
 export default App;

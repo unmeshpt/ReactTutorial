@@ -1,6 +1,7 @@
 import React from 'react'
 import Axios from 'axios'
 
+
 class Databasedemo extends React.Component {
 
     constructor(props) {
@@ -19,21 +20,20 @@ class Databasedemo extends React.Component {
     // }
 
     changeText = (e) => {
-       
+
         this.setState({ [e.target.name]: e.target.value })
     }
 
-    Register =(e)=>{
+    Register = (e) => {
         e.preventDefault()
-        var dat={
-            Username:this.state.Username,
-            Password:this.state.Password
+        var dat = {
+            Username: this.state.Username,
+            Password: this.state.Password
 
         }
-alert(dat)
-        // Axios.post('https://jsonplaceholder.typicode.com/posts').then((response) => {
-
-        // })
+        Axios.post('http://localhost/test/api.php', dat).then((response) => {
+            alert(response)
+        })
 
     }
 
