@@ -1,8 +1,12 @@
 import React from 'react';
 
-function Contact(){
+function Contact(props){
+    var nm=props.name.toUpperCase()
     return(
+        
         <div>
+            
+            <h1> {nm} Contact Page</h1>
             <label>Email ID</label>
             <input type="text"/>
             <br/>
