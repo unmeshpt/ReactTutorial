@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.css'
 
 class Counternew extends React.Component {
     constructor(props) {
@@ -20,7 +21,8 @@ class Counternew extends React.Component {
         this.incriment()
         return (
             <div>
-                <p>{this.state.counter}</p>
+                <p>Unmesh <span className="spancolor">{this.state.counter}</span></p>
+                
             </div>
         )
     }

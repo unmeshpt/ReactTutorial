@@ -5,10 +5,11 @@ import App from './App';
 import Counter from './Counter'
 import reportWebVitals from './reportWebVitals';
 import Counternew from './Counternew'
+import Demo from './Demo'
+import Demonew from './Demonew'
 
-var x = setInterval(() => {
-    ReactDOM.render(<Counternew />, document.getElementById('root'));
-}, 1000);
+    ReactDOM.render(<Demonew />, document.getElementById('root'));
+
 
 
 // If you want to start measuring performance in your app, pass a function
