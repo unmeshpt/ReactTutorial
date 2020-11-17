@@ -30,9 +30,9 @@ class Demonew extends React.Component {
         ))
 
     }
-    textchangeev=(e)=>{
+    textchangeev = (e) => {
 
-this.setState({changetext:e.target.value})
+        this.setState({ changetext: e.target.value })
     }
 
     render() {
